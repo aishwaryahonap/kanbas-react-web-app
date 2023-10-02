@@ -1,0 +1,32 @@
+.wd-button a{
+    color: black;
+    background-color: lightgray;
+}
+.wd-margin-top{
+    margin-top: 20px;;
+}
+.wd-margin-right{
+    margin-right: 20px;
+}
+.wd-button{
+    margin-left: 5px;
+}
+.wd-margin-left{
+    margin-left: 20px;;
+}
+.list-group-item a{
+    text-decoration: none;
+    color: red;
+}
+.wd-border-left{
+    border-radius: 0px;
+    border-width: 1px 1px 1px 5px;
+    border-left-color : green;
+}
+.wd-bg-color-gray{
+    background-color:lightgray;
+}
+.wd-border-small{
+    border-width: 1px;
+    border-color: black;
+}

@@ -1,0 +1,14 @@
+.wd-font-size-large{
+    font-size: larger;
+}
+.wd{
+    text-align: end;
+}
+.wd-block{
+    display: block;
+}
+.wd-border{
+
+    border-width: 1px; 
+    border-style: solid;
+}

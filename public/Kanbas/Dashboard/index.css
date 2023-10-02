@@ -1,0 +1,36 @@
+.wd-padding-left{
+    padding-left: 20px;
+    
+}
+.wd-margin-bottom-0{
+    margin-bottom: 0px;
+}
+.wd-margin-top{
+    margin-top: 20px;;
+}
+.wd-margin-bottom{
+    margin-bottom: 20px;
+}
+.wd-margin-left{
+    margin-left:40px;
+}
+.wd-margin-left-more{
+    margin-left: 60px;
+}
+.wd-dashboard{
+    width: 270px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    
+}
+.wd-center{
+    text-align: right;
+}
+.wd-font-small{
+    font-size:small;
+}
+.wd-link{
+    text-decoration: none;
+}

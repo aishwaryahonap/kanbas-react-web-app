@@ -1,0 +1,39 @@
+.wd-btn-size{
+
+width: 16%;
+
+}
+.wd-btn-active{
+    color:gray;
+    border: solid;
+    border-color: lightgray;
+    border-bottom-color: white;
+    border-radius: 0px;
+    border-width: 1px;
+}
+.wd-btn-inactive{
+    color: red;
+    border-radius: 0px;
+    border-width: 0px 0px 1px 0px;
+    border-bottom-color: lightgray;
+    border-radius: 0px;
+    margin-left: 0%;
+}
+.wd-font-size-xl{
+    font-size: x-large;
+}
+.wd-center{
+   
+    display: flex;
+    align-items: center;    
+}
+.wd-label{
+    width: 100%;
+    height: 110%;
+}
+.wd-label-border{
+    border: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 0;
+}

@@ -1,0 +1,56 @@
+.wd-margin-top{
+    margin-top: 20px;
+}
+.wd-margin-top-10{
+    margin-top: 10px;
+}
+.wd-margin-left{
+    margin-left:20px;
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+.wd-margin-top-0{
+    margin-top: 0;
+}
+.wd-margin-right{
+    margin-right: 20px;
+}
+.wd-button a{
+    color: black;
+    background-color: lightgray;
+}
+.wd-inline{
+    display: inline;
+}
+.wd-inline a{
+    display: inline;
+}
+.wd-button-1{
+    color: black;
+    background-color: lightgray;
+}
+.wd-button-2{
+    color:white;
+    background-color:green;
+}
+.wd-underline-no a{
+    text-decoration: none;
+    color: black;
+}
+.wd-border-1{
+    border-width: 1px 0px 0px 0px;    
+}
+.wd-border-0{
+    border-width: 0 0 0 0;
+
+}
+.wd-font-size-sm{
+    font-size: small;
+}
+.wd-text-center{
+    text-align: center;
+}
+.wd-text-right{
+    text-align: right;
+}
