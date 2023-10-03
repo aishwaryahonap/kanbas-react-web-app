@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css">
         <link href="/Kanbas/Courses/Home/index.css" rel="stylesheet">
         <link href="/Kanbas/Courses/Modules/index.css" rel="stylesheet">
-        <link href="\Kanbas\Courses\Settings\index.css" rel="stylesheet">
+        <link href="/Kanbas/Courses/Settings/index.css" rel="stylesheet">
     </head>
     <body>
     <div class="wd-flex-row-container">
@@ -84,7 +84,7 @@
                         <li class="wd-active"><a href="/Kanbas/Courses/Settings/CourseDetails.html">Settings</a></li>
                     </ul>
                 </div>
-                <div class="wd-flex-grow-1 ms-5 me-2">                    
+                <div class=" wd-flex-grow-1 ms-5 me-2 mt-3 ">                    
                         <a href="/Kanbas/Courses/Settings/CourseDetails.html" class="btn btn-light wd-btn-size wd-btn-inactive" tabindex="-1" role="button" >CourseDetails</a>
                         <!-- <button type="button" class="btn btn-light wd-btn-size wd-btn-active">Course Details</button> -->
                         <button type="button" class="btn btn-light wd-btn-size wd-btn-inactive">Sections</button>
@@ -93,12 +93,165 @@
                         <button type="button" class="btn btn-light wd-btn-size  wd-btn-inactive">Apps</button>
                         <button type="button" class="btn btn-light wd-btn-size  wd-btn-inactive">Feature Options</button>
                         <button type="button" class="btn btn-light wd-btn-size  wd-btn-inactive"> Integration</button>
+                        <div class="col-6">
+                            <label class="form-label mt-4">Drag and drop items to reorder them in the course navigation </label>
+
+                            <ul class="list-group mt-3 w-100" style="border-radius: 0%;">
+                                <li class="list-group-item">
+                                    <a href="/Kanbas/Courses/Home/home.html"  style="color: black;">Home</a>
+
+                                </li>
+                                <li class="list-group-item " >
+                                    <a href="/Kanbas/Courses/Modules/screen.html" style="color: black;" >Modules </a> 
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Piazza </a>
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Zoom Meetings</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/Kanbas/Courses/Assignments/index.html"  style="color: black;">Assignments</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Quizzes</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/Kanbas/Courses/Grades/grades.html"  style="color: black;">Grades</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">People</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Panopto Video</a>    
+                                    <i class="fa fa-ellipsis-v float-end mt-1" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+
+                            <label class="form-label mt-4 mb-0">Drag itemshere to hide them from students.</label>
+                            <br><label class="form-label pt-0 wd-font-size-sm ">Disabling most pages will cause studentswho visit those pages to be redirected to the course home page.
+                            </label>
+
+                            <ul class="list-group mt-3 w-100" style="border-radius: 0%;">
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Chat</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2 mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">SCORM</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Attendance</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Barnes and Noble Bookstore</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Digication</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Top Hat</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Syllabus</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Perusall</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Microsoft Teams Meetings</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Chat</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">FACT Reporting and Photo Roster</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Chat</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Progress Report (Navigate)</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Microsoft Teams for Canvas</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">VHL Central</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Gradescope 1.3</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">Credentials</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a href="#"  style="color: black;">iClicker</a>
+                                    <i class="fa fa-ellipsis-v float-end mt-3" aria-hidden="true"></i>
+                                    <div><label class="form-label pt-0 wd-font-size-sm ms-2  mb-0">  Page Disable, won't appear in navigation.</label></div>
+                                </li>
+                                
+                            
+                            </ul>  
+                        </div>          
                 </div>
-                        
-                    
-
-            
-
             </div>
         </div>
     </div>
@@ -107,15 +260,12 @@
 
 
 
-
-
-
-
+<!-- 
 <br/>
 <table width="100%">
     <tr valign="top">
         <td>
-            <!--Kanbas Navigation-->
+          
             <ul>
                 <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
                 <li><a href="#">Dashboard</a></li>
@@ -129,7 +279,7 @@
             </ul>
         </td>
         <td>
-            <!--Course Navigation-->
+            
             <ul>
                 <li><a href="/Kanbas/Courses/Home/home.html">Home</a></li>
                 <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
@@ -153,7 +303,7 @@
         </td>
     
         <td>
-            <!--Navigation-->
+           
             <form action="/Kanbas/Courses/Settings/CourseDetails.html">
                 <button >Course Details</button>
                 <button type="button">Sections</button>
@@ -287,4 +437,4 @@
         </td>
     </tr>
     
-</table>
+</table> -->

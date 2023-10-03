@@ -20,6 +20,10 @@
 }
 .wd-border-left{
     border-radius: 0px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0% ;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
     border-width: 1px 1px 1px 5px;
     border-left-color : green;
 }
@@ -29,4 +33,7 @@
 .wd-border-small{
     border-width: 1px;
     border-color: black;
+}
+.wd-border-radius-0{
+    border-radius: 0%;
 }
