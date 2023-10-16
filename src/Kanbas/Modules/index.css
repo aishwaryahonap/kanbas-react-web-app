@@ -1,0 +1,84 @@
+.wd-button {
+    color: black;
+    background-color: lightgray !important;
+    color: black !important;
+}
+.wd-margin-top{
+    margin-top: 20px;;
+}
+.wd-margin-right{
+    margin-right: 20px;
+}
+.wd-button{
+    margin-left: 5px;
+}
+.wd-margin-left{
+    margin-left: 20px;;
+}
+.list-group-item a{
+    text-decoration: none;
+    color: red;
+}
+.wd-border-left{
+    border-radius: 0px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0% ;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-width: 1px 1px 1px 5px;
+    border-left-color : green;
+}
+.wd-bg-color-gray{
+    background-color:lightgray;
+}
+.wd-border-small{
+    border-width: 1px;
+    border-color: black;
+}
+.wd-border-radius-0{
+    border-radius: 0% !important;
+}
+.list-group {
+    border-color: black  !important;
+}
+.wd-border-color-black{
+    border-color: black !important;
+}
+.wd-inline{
+    display: inline !important;
+}
+.wd-color-green{
+    color: green;
+}
+.wd-bg-color-lightgray{
+    background-color: lightgray;
+}
+.wd-margin-icons{
+    margin: 5px;
+}
+.wd-font-size-large{
+    font-size: 1.3em !important;
+}
+.wd-padding-10{
+    padding: 15px !important;
+    margin: 20px !important;
+}
+.list-group .wd-border-black{
+    border-color: black;
+    border-top-width: 1px !important;
+}
+.wd-margin-botton-0{
+    margin-bottom: 0;
+}
+.wd-margin-left{
+    margin-left: 60px !important;
+}
+.wd-bg-color-white{
+    background-color: white !important;
+}
+.wd-color-green{
+    color: green;
+}
+.wd-width{
+    width: 150px;
+}

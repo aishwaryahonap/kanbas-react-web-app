@@ -1,0 +1,66 @@
+.wd-padding-left{
+    padding-left: 20px;
+    
+}
+.wd-margin-bottom-0{
+    margin-bottom: 0px;
+}
+.wd-margin-top{
+    margin-top: 20px;;
+}
+.wd-margin-bottom{
+    margin-bottom: 10px;
+}
+.wd-margin-left{
+    margin-left:40px;
+}
+.wd-margin-left-more{
+    margin-left: 60px;
+}
+.wd-dashboard{
+    width: 270px !important;
+    height: 300px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 50px !important;
+
+    border-radius: 0% !important;
+    
+}
+.wd-center{
+    text-align: right;
+}
+.wd-font-small{
+    font-size:small;
+}
+.wd-link {
+    text-decoration-line: none !important;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+           
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+  }
+
+.list-group-item+.list-group-item {
+    border-top-width: 1px;
+}
+.wd-font-size-big{
+    font-size: 1.2em;
+}
+.wd-width-100{
+    width: 100% !important;
+}
+.wd-img{
+    padding: 0px !important;
+    border-radius: 0% !important;
+}
+.wd-padding-0{
+    padding: 0% !important;
+}
+.card{
+    text-decoration: none I !important;
+}
