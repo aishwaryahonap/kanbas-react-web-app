@@ -22,7 +22,7 @@ function CourseStaus(){
     //   };
     return(
         <div>
-            <div class="me-5 ms-5">
+            <div class="me-2 ms-3">
             {/* <div class="row mt-3 ms-1">
                     <ul class="list-group wd-border-black wd-bg-color-white " >
                         <li class="list-group-item mb-1 list-group-item-secondary " >
@@ -34,7 +34,6 @@ function CourseStaus(){
                         </li>
                     </ul>
             </div> */}
- 
 
                 <div class="row mt-3 ms-1">
                     <ul class="list-group wd-bg-color-white wd-border-black " >
@@ -49,7 +48,7 @@ function CourseStaus(){
                 </div>
                 
                 <div class="row">
-                    <h5 class="float-start ms-1 mt-4"> To Do</h5><hr/>
+                    <h5 class=" ms-1 mt-4"> To Do</h5> <hr className="ms-2 me-2"/>
                     <ul class="list-group ">
                         <li class="list-group-item d-flex justify-content-between align-items-start ">
                             <div class="ms-2me-auto">

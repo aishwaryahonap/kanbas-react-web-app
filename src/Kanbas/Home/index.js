@@ -6,11 +6,11 @@ import CourseStaus from "./CourseStatus";
 
 function Home() {
     return (
-      <div className="row wd-inline ">
-        <div className="col"> 
+      <div className="row ">
+        <div className="col-8"> 
             <Modules/>
         </div>
-        <div className="col float-end wd-inline">
+        <div className="col ">
         <CourseStaus/>
         </div>
         

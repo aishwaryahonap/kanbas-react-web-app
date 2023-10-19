@@ -18,10 +18,10 @@ function ModuleList() {
          .filter((module) => module.course === courseId)
          .map((module, index) => (
            <li key={index} className="list-group-item list-group-item-secondary wd-bg-color-white wd-padding-10 wd-border-black">
-            <div className="flex wd-inline">
+            <div className="flex wd-inline-1">
               <FaEllipsisVertical className="wd-margin-icons"/>                
                 <BiSolidRightArrow  className="wd-margin-icons"/>
-                <div className="wd-inline wd-font-size-large wd-margin-icons">
+                <div className="wd-inline-1 wd-font-size-large wd-margin-icons">
                 {module.name}
                 </div>
                 <FaEllipsisVertical className="float-end wd-margin-icons"/>

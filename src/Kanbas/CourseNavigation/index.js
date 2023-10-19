@@ -3,7 +3,7 @@ import "./index.css"
 import db from "../../Kanbas/Database";
 
 function CourseNavigation() {
-  const links = ["Home", "Modules","Piazza", "Assignments", "Quizzes","Grades"];
+  const links = ["Home", "Modules","Piazza", "Assignments", "Quizzes","Grades", "People"];
   // const courses=db.courses;
  
   const { courseId } = useParams();
@@ -12,7 +12,7 @@ function CourseNavigation() {
   return (
     <div className="list-group wd-course-navigation" style={{ width: 180 }}>
       <div className="wd-fg-color-gray wd-font-size-small wd-margin-bottom">
-         {courseId}{course.Semester}
+         {course.code}{course.Semester}
       </div>
       
       {links.map((link, index) => (

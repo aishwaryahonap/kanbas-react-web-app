@@ -1,0 +1,33 @@
+.wd-button-1{
+    background-color: lightgray;
+    color: black !important;
+}
+.wd-label-1{
+    border-radius: 50px; 
+    border-width: 1px; 
+    border-style: solid;
+}
+.wd-headings{
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.list-group .wd-border-list{
+    border-radius: 0%;
+    border-width: 2px !important;
+    border-color: black !important ;
+    --bs-list-group-border-color: #212529 !important;
+    border-left-color: green;
+    --bs-list-group-border-left-color-left: green !important;
+}   
+.wd-ul{
+    list-style-type: none !important;
+}
+.wd-font-size-small-1{
+    font-size: 0.8em;
+}
+.list-group-item .wd-border-list{
+
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+    --bs-list-group-border-color: green !important;
+}
