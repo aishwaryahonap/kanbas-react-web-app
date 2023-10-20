@@ -1,3 +1,7 @@
 .wd-inline{
     display: inline !important; 
 }
+.wd-list-button{
+    border-radius: 0% !important;
+    text-align: left;
+}

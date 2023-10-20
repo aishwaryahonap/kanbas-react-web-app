@@ -63,13 +63,14 @@ function Assignments() {
                         </li>
                         
                         
-                            <li style={{marker:"none"}} className="ps-2 wd-border-list">
+                            <li style={{marker:"none"}} className="ps-2 wd-border-list " >
                             <div className="list-group wd-border-list">
                                     {courseAssignments.map((assignment) => (
                                     <Link
                                         key={assignment._id}
                                         to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                                        className="list-group-item">
+                                        className="list-group-item"
+                                        style={{ borderLeftColor: 'green', borderLeftWidth: 'thick'}}>
                                         <BsThreeDotsVertical className="float-start mt-1"/>
                                         <GiNotebook className="float-start mt-1 wd-fg-color-green me-2 ms-2"/>
                                         <div className="wd-inline fw-bold ps-1">

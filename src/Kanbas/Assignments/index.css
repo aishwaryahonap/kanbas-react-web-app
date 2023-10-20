@@ -19,6 +19,7 @@
     --bs-list-group-border-color: #212529 !important;
     border-left-color: green;
     --bs-list-group-border-left-color-left: green !important;
+
 }   
 .wd-ul{
     list-style-type: none !important;

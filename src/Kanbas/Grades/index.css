@@ -1,0 +1,9 @@
+.wd-table-border{
+    border-width: 1px !important;
+}
+.wd-fg-color-red{
+    color: red !important;
+}
+.table-bordered>:not(caption)>* {
+    border-width: var(--bs-border-width) 1;
+}

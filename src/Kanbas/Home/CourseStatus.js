@@ -37,13 +37,13 @@ function CourseStaus(){
 
                 <div class="row mt-3 ms-1">
                     <ul class="list-group wd-bg-color-white wd-border-black " >
-                        <li class="list-group-item mb-1 list-group-item-secondary"> <TbFileImport className="me-2"/> Import Existing Content</li>
-                        <li class="list-group-item mb-1 list-group-item-secondary"><BsFillArrowRightSquareFill className="me-2"/>Import From Commons</li>
-                        <li class="list-group-item mb-1 list-group-item-secondary"><ImSpinner4 className="me-2"/>Choose Home Page</li>
-                        <li class="list-group-item mb-1 list-group-item-secondary"><VscGraph className="me-2"/>View Course Stream</li>
-                        <li class="list-group-item mb-1 list-group-item-secondary"><FaBullhorn className="me-2"/>New Annoucement </li>
-                        <li class="list-group-item mb-1 list-group-item-secondary"><VscGraph className="me-2"/>New Analytics</li>
-                        <li class="list-group-item mb-1 list-group-item-secondary"><BsBell className="me-2"/>View Course Notification</li>
+                        <li class="list-group-item mb-1 list-group-item-secondary btn btn-secondary wd-list-button"> <TbFileImport className="me-2"/> Import Existing Content</li>
+                        <li class="list-group-item mb-1 list-group-item-secondary btn btn-secondary wd-list-button"><BsFillArrowRightSquareFill className="me-2"/>Import From Commons</li>
+                        <li class="list-group-item mb-1 list-group-item-secondary btn btn-secondary wd-list-button"><ImSpinner4 className="me-2"/>Choose Home Page</li>
+                        <li class="list-group-item mb-1 list-group-item-secondary btn btn-secondary wd-list-button"><VscGraph className="me-2"/>View Course Stream</li>
+                        <li class="list-group-item mb-1 list-group-item-secondary btn btn-secondary wd-list-button"><FaBullhorn className="me-2"/>New Annoucement </li>
+                        <li class="list-group-item mb-1 list-group-item-secondary btn btn-secondary wd-list-button"><VscGraph className="me-2"/>New Analytics</li>
+                        <li class="list-group-item mb-1 list-group-item-secondary btn btn-secondary wd-list-button"><BsBell className="me-2"/>View Course Notification</li>
                     </ul>
                 </div>
                 
