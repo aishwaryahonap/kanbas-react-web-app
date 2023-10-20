@@ -7,6 +7,7 @@ import {FaBullhorn} from "react-icons/fa"
 import {BsBell} from "react-icons/bs"
 import {Bs5CircleFill} from "react-icons/bs"
 import{LiaTimesSolid} from "react-icons/lia"
+import { Link } from "react-router-dom"
 
 
 function CourseStaus(){
@@ -50,10 +51,10 @@ function CourseStaus(){
                 <div class="row">
                     <h5 class=" ms-1 mt-4"> To Do</h5> <hr className="ms-2 me-2"/>
                     <ul class="list-group ">
-                        <li class="list-group-item d-flex justify-content-between align-items-start ">
-                            <div class="ms-2me-auto">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2me-auto ">
                                 <div class="fw-bold wd-fg-color-red ">
-                                    <Bs5CircleFill className=" me-2"/>  Grade A1 - ENV + HTML</div>
+                                    <Bs5CircleFill className=" me-2"/>  Grade A1 - ENV + HTML </div>
                             <div class="wd-fg-color-gray"> 100 points - Sept 18 at 11:59pm</div> 
                             </div>
                         <LiaTimesSolid className="wd-fg-color-gray"/>
