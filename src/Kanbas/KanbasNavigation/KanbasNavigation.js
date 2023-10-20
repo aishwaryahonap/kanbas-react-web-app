@@ -10,8 +10,6 @@ import {AiOutlineQuestionCircle} from "react-icons/ai"
 import "./index.css"
 import "./NEULogo.png"
 
-
-
 function KanbasNavigation() {
   const { pathname } = useLocation();
   const links = ["Account", "Dashboard"  , "Courses", "Calendar", "Inbox", "Studio", "History", "Help"];
@@ -25,9 +23,6 @@ function KanbasNavigation() {
     History: <AiOutlineClockCircle className="wd-icon"/>, 
     Help: <AiOutlineQuestionCircle className="wd-icon"/>, 
   };
-
-
-
   return (
     <div className="list-group wd-kanbas-navigation " style={{ width: 100}}>
        <img src="/Kanbas/KanbasNavigation/NEULogo.png " width="100"/>
