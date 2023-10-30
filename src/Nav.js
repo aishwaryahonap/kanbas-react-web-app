@@ -4,10 +4,13 @@ function Nav() {
 
  return (
    <nav className="nav nav-tabs mt-2">
-     <Link className="nav-link" to="/Labs/a3"
-      className={`nav-link ${pathname.includes("a3") ? "active" : ""}`}>Labs</Link>
+     <Link className="nav-link" to="/Labs/a4"
+      className={`nav-link ${pathname.includes("a3") || pathname.includes("a4") || pathname.includes("a5")  ? "active" : ""}`}>Labs</Link>
      {/* <Link className="nav-link" to="/Labs/a4">A4</Link>
      <Link className="nav-link" to="/Labs/a5">A5</Link> */}
+     {/* <Link className="nav-link" to="/Labs/a4">
+       A4</Link> */}
+
      
      
      <Link className="nav-link" to="/hello"

@@ -11,11 +11,11 @@ import{BiGlassesAlt} from "react-icons/bi"
 import StudentViewButton from "./StudentViewButton";
 import Grades from "../Grades";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const {pathname}=useLocation();
-  const[slash, kanbas,courses,id,screen,assignment]=pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const[slash, kanbas,courses1,id,screen,assignment]=pathname.split("/");
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <div className="row">
