@@ -12,15 +12,20 @@ import { Provider } from "react-redux";
 function Kanbas() {
   const [courses, setCourses] = useState(db.courses);
   
-  const setCourse_ID=new Date().getTime().toString();
-
+  
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
-    startDate: "2023-09-10", endDate: "2023-12-15"
+    startDate: "2023-09-10", endDate: "2023-12-15", _id:"", code:"", Semester:"Fall 2023"
   });
 
   const addNewCourse = () => {
-    setCourses([...courses, { ...course, _id:setCourse_ID}]);
+    // setCourses([...courses, { ...course, _id: new Date().getTime().toString()}]);
+    const id = new Date().getTime().toString();
+    const newCourse = {
+    ...course,
+    _id: id
+  }
+    setCourses([...courses, newCourse]);
   };
   const deleteCourse = (courseId) => {
     setCourses(courses.filter((course) => course._id !== courseId));
@@ -46,7 +51,9 @@ function Kanbas() {
        </div>
        <div className="col">
          <Routes>
-         <Route path="/" element={<Dashboard/>}/>
+         <Route path="/" element={<Dashboard
+
+         />}/>
             <Route path="Account/*" element={<Account/>}/>
             <Route path="Dashboard/" element={
             <Dashboard

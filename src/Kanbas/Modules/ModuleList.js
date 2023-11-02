@@ -54,6 +54,8 @@ function ModuleList() {
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  // const abc=modules
+  //       .filter((module) => module.course === courseId)
 
   return (
     <ul className="list-group wd-border-radius-0 ">
@@ -93,7 +95,11 @@ function ModuleList() {
           </button>
         </div>        
 
-      </li>    
+          {/* {module.
+            filter((module) => module.course === courseId)=="") && dispatch(addModule({ ...module, course: courseId }))
+          } */}
+      </li>  
+      {/* {JSON.stringify(abc,null,2)}   */}
       {
        modules
          .filter((module) => module.course === courseId)
@@ -105,7 +111,7 @@ function ModuleList() {
               <FaEllipsisVertical className="wd-margin-icons"/>                
                 <BiSolidRightArrow  className="wd-margin-icons"/>
                 <div className="wd-inline-1 wd-font-size-large wd-margin-icons">
-                {module.name}{module.course}
+                {module.name}
                 </div>
                 <FaEllipsisVertical className="float-end wd-margin-icons"/>
                 <AiOutlinePlus className="float-end  wd-margin-icons"/>
@@ -121,14 +127,8 @@ function ModuleList() {
                 <button className="btn btn-sm wd-button mt-1 "
                   onClick={() => dispatch(deleteModule(module._id))}>
                   Delete
-                </button>
-                
-
-  
+                </button>  
             </div>
-                
-            
-            
            </li>
       ))
       }

@@ -2,7 +2,12 @@ import ModuleList from "./ModuleList";
 import {AiOutlinePlus} from "react-icons/ai"
 import {FaEllipsisVertical} from "react-icons/fa6"
 import {AiOutlineCheckCircle} from 'react-icons/ai'
+import { useParams } from "react-router-dom";
+import db from "../../Kanbas/Database";
+
+
 function Modules() {
+
   return (
     <div> 
       <div className="float-end mt-2 d-flex">     
@@ -18,7 +23,8 @@ function Modules() {
           </div>
       </div>
         <br/> <br/><hr/>
-      <ModuleList />
+
+      <ModuleList/>
     </div>
 
   );

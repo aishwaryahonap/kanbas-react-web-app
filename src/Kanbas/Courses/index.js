@@ -25,7 +25,7 @@ function Courses({ courses }) {
               <ol class="breadcrumb ms-3 mt-3" >
                 <li class="breadcrumb-item wd-fg-color-red wd-font-size-large">
               <FaBars className="me-2"/>
-              {course.number}{course.Semester}
+              {course.name}({course.number})
                   </li>
                 {/* {!assignment && <li class="breadcrumb-item active wd-inline wd-font-size-large" aria-current="page"> {screen} </li>}  */}
                 <li className={`breadcrumb-item wd-inline wd-font-size-large ${!pathname.includes(assignment)? "active" : "wd-fg-color-red"}`}> {screen} </li>
@@ -41,7 +41,7 @@ function Courses({ courses }) {
           {pathname.includes("Modules") && <StudentViewButton/>}
         </div>
       </div>
-      <CourseNavigation />
+      <CourseNavigation courses={courses}/>
       <div>
         <div  
           className="overflow-y-scroll position-fixed bottom-0 end-0  "
@@ -50,6 +50,7 @@ function Courses({ courses }) {
             top: "70px",
           }}
         >
+          
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />

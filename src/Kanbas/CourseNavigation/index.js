@@ -2,17 +2,17 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import "./index.css"
 import db from "../../Kanbas/Database";
 
-function CourseNavigation() {
+function CourseNavigation({courses}) {
   const links = ["Home", "Modules","Piazza", "Assignments", "Quizzes","Grades", "People"];
   // const courses=db.courses;
  
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div className="list-group wd-course-navigation" style={{ width: 180 }}>
       <div className="wd-fg-color-gray wd-font-size-small wd-margin-bottom">
-         {course.code}{course.Semester}
+         {course.number}{course.Semester}
       </div>
       
       {links.map((link, index) => (

@@ -10,6 +10,7 @@ function Dashboard(
     deleteCourse, updateCourse }
       
 ) {
+    
     // const [courses, setCourses] = useState(db.courses);
     // // const courses = db.courses;
     // const [course, setCourse] = useState({
@@ -39,7 +40,7 @@ function Dashboard(
     //     );
     //   };
     
-    
+
     return (
         <div className=" wd-padding-left wd-margin-top ">
             <h1>Dashboard</h1>
@@ -50,19 +51,76 @@ function Dashboard(
             </div>
 
             <div className="ms-4">
-            <input value={course.name}  className="form-control"
-                    onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
-            <input value={course.number} className="form-control"
+
+            <table className="ms-2">
+                <tr>
+                    <td>
+                        <label>Enter New Course: </label>
+                    </td>
+                    <td> 
+                    <input  value={course.name} className="form-control" placeholder="Enter Course Name"
+                            onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Enter Course Number:   &nbsp; </label>
+                    </td>
+                    <td> 
+                    <input value={course.number} className="form-control" placeholder="Enter Course Number"
                     onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
-            <input value={course.startDate} className="form-control" type="date"
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Enter Semester: </label>
+                    </td>
+                    <td> 
+                    <input value={course.Semester} className="form-control" placeholder="Enter Semester"
+                    onChange={(e) => setCourse({ ...course, Semester: e.target.value }) } />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Enter Start Date: </label>
+                    </td>
+                    <td> 
+                    <input value={course.startDate} className="form-control" type="date" placeholder="Enter Start Date"
                     onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
-            <input value={course.endDate} className="form-control" type="date"
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Enter End Date: </label>
+                    </td>
+                    <td> 
+                    <input value={course.endDate} className="form-control" type="date" placeholder="Enter End Date"
                     onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
+                    </td>
+                </tr>
+                
+            </table>
+            {/* <input  value={course.name} className="form-control" placeholder="Enter Course Name"
+                    onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
+            <input value={course.number} className="form-control" placeholder="Enter Course Number"
+                    onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
+            <input value={course.Semester} className="form-control" placeholder="Enter Semester"
+                    onChange={(e) => setCourse({ ...course, Semester: e.target.value }) } />
+            <input value={course.startDate} className="form-control" type="date" placeholder="Enter Start Date"
+                    onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
+            <input value={course.endDate} className="form-control" type="date" placeholder="Enter End Date"
+                    onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } /> */}
+            
 
 
             <button className="btn wd-button  mt-2 me-2"
             onClick={addNewCourse} >
-             Add
+               
+             Add 
             </button>
 
             <button className="btn wd-button  mt-2 me-2"
@@ -74,14 +132,14 @@ function Dashboard(
 
             <div class="row row-cols-1 row-cols-md-3 g-4 d-flex flex-row flex-wrap wd-padding-left">
                 {courses.map((course) => (
-                <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="card  wd-dashboard  wd-padding-0 wd-link">
+                <Link key={course._id} to={`/Kanbas/Courses/${course._id}/Home`} className="card  wd-dashboard  wd-padding-0 wd-link">
                     <img src={color} class="card-img-top wd-img"/>
                     
                     <div class="card-body ">
                         <div class="card-title wd-fg-color-blue wd-margin-bottom wd-link wd-font-size-big">
                         {course.name} 
                         </div>
-                        <p class="card-text wd-fg-color-gray wd-margin-bottom-0">  {course._id}.{course.number}.{course.Semester}
+                        <p class="card-text wd-fg-color-gray wd-margin-bottom-0">{course.number}.{course.Semester}
                             <div class="wd-font-small wd-fg-color-gray ">From {course.startDate} to {course.endDate}</div>
                          </p>
                         
