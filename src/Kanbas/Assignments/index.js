@@ -8,27 +8,51 @@ import {FiChevronDown} from "react-icons/fi"
 import {GiNotebook} from "react-icons/gi"
 import {AiFillCheckCircle} from "react-icons/ai"
 
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+  setAssignment,
+} from "./assignmentsReducer";
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignment;
-  const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId);
+  //const assignments = db.assignment;
+  //const courseAssignments = assignments.filter(
+   // (assignment) => assignment.course === courseId);
+
+const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+const dispatch = useDispatch();
+//   const assignments = db.assignment;
+     const courseAssignments = assignments.filter(
+     (assignment) => assignment.course === courseId);
+    
+    var id;
+    id = new Date().getTime().toString()
   return (
   <div className="me-3">
     <div class="row">
 
         <div class="float-end ">
             <div class=" float-end ms-2 ">
-                <div class="btn btn-secondary btn-sm  wd-button-1"  href="#" role="button">
+                <div class="btn btn-secondary btn-sm  wd-button-1"   role="button">
                     <BsThreeDotsVertical/>
                         
                 </div>
             </div>
 
-            <div class=" float-end ms-2 ">
-                <div class="btn btn-danger btn-sm " href="#" role="button">
+            <div class=" float-end ms-2 ">  
+            {}
+                <Link key={assignment._id}
+                    onClick={() => dispatch(addAssignment({ ...assignment, course: courseId,_id:new Date().getTime().toString() }))}
+                    to={`/Kanbas/Courses/${courseId}/Assignments/${new Date().getTime().toString()}`}
+                    className="btn btn-danger btn-sm"
+                     >
+                    Add
                     <AiOutlinePlus/>
-                    Assignment</div>
+                </Link>
+            
             </div>
 
 
@@ -50,7 +74,7 @@ function Assignments() {
       <div class="row">
                 
         <ul class="list-group pe-4 ps-1  ">
-                
+        
                         <li class="list-group-item  list-group-item-secondary">
                         <BsThreeDotsVertical className="float-start mt-1"/>
                          <FiChevronDown classname="float-start me-2"/>
@@ -61,6 +85,7 @@ function Assignments() {
                             {/* style="border-radius: 50px; border-width: 1px; border-style: solid;" */}
                               
                         </li>
+        
                         
                         
                             <li style={{marker:"none"}} className="ps-2 wd-border-list " >
