@@ -149,7 +149,7 @@ function Dashboard(
                             className="btn btn-sm wd-button float-end mt-1"
                             onClick={(event) => {
                                 event.preventDefault();
-                                deleteCourse(course._id);
+                                deleteCourse(course);
                             }}>
                             Delete
                         </button>
