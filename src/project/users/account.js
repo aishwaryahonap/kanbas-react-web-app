@@ -4,6 +4,8 @@ import { Link, useNavigate, useParams  } from "react-router-dom";
 function Account() {
     const { id } = useParams();
   const [account, setAccount] = useState(null);
+  
+
   const navigate = useNavigate();
   const fetchAccount = async () => {
     const account = await client.account();
@@ -41,11 +43,20 @@ function Account() {
 
   return (
     <div className="w-50 mt-3 ">
-        <h1>Account</h1>
+        <h1>Account's Page</h1>
       {/* <h2>Hello {account.username} !</h2> */}
-      {account && (
+
+      {!account && (
         <div>
-          
+            <h3> Not logged in!</h3>
+        </div>
+      )}
+      
+      {account && (
+         
+        <div>
+          <h3>Username: {account.username} !</h3>
+
           <label>Password: </label>
           <input value={account.password}
             onChange={(e) => setAccount({ ...account,
@@ -97,9 +108,13 @@ function Account() {
         Signout
         </button>
 
-        <Link to="/project/table" className="btn btn-warning ">
-        Users
-         </Link>
+
+        {account.role === "ADMIN" && (
+            <Link to="/project/table" className="btn btn-warning ">
+            Users
+            </Link>
+        )}
+
         </div>
       )}
     </div>

@@ -7,6 +7,12 @@ function UserTable() {
 
   const [user, setUser] = useState({ username: "", password: "", role: "USER" });
 
+  const [currentUser, setCurrentUser]= useState(null);
+  const fetctUser=async()=>{
+    const user=await client.account();
+    setCurrentUser(user);
+  };
+
   const deleteUser = async (user) => {
     try {
       await client.deleteUser(user);
@@ -50,9 +56,25 @@ function UserTable() {
     const users = await client.findAllUsers();
     setUsers(users);
   };
-  useEffect(() => { fetchUsers(); }, []);
+  useEffect(() => { 
+    fetchUsers(); 
+    fetctUser();
+}, []);
   return (
-    <div>
+    <div className="mt-3">
+    <h2>List of Users (Extra Credit)</h2>
+    {!currentUser && (
+        <h3>Not Logged In!!</h3>
+    )}
+
+    {currentUser && currentUser.role !=="ADMIN" &&(
+        <h3>Unauthorised! 
+        Only ADMINS can view full user list</h3>
+    ) }
+
+    {currentUser && currentUser.role==="ADMIN" && (
+      <>
+
       <h1>User List</h1>
       <table className="table">
         <thead>
@@ -122,6 +144,8 @@ function UserTable() {
             </tr>))}
         </tbody>
       </table>
+      </>
+        )}
     </div>
   );
 }
