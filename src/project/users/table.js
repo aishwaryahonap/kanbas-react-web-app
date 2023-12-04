@@ -23,7 +23,6 @@ function UserTable() {
     }
   };
    
-
 //   const createUser = async () => {
 //     try {
 //       const newUser = await client.createUser(user);

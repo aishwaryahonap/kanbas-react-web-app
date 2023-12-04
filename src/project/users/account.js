@@ -31,7 +31,7 @@ function Account() {
     }
   }, []);
 
-
+//
 //   useEffect(() => {
 //     fetchAccount();
 //   }, []);
