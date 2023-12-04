@@ -3,6 +3,7 @@ import { BsTrash3Fill, BsPlusCircleFill, BsFillCheckCircleFill, BsPencil }  from
 import * as client from "./client";
 import { Link } from "react-router-dom";
 function UserTable() {
+    const [error, setError] = useState("");
   const [users, setUsers] = useState([]);
 
   const [user, setUser] = useState({ username: "", password: "", role: "USER" });
@@ -23,12 +24,20 @@ function UserTable() {
   };
    
 
-  const createUser = async () => {
+//   const createUser = async () => {
+//     try {
+//       const newUser = await client.createUser(user);
+//       setUsers([newUser, ...users]);
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   };
+
+const createUser= async () => {
     try {
-      const newUser = await client.createUser(user);
-      setUsers([newUser, ...users]);
+      await client.signup(user);
     } catch (err) {
-      console.log(err);
+      setError(err.response.data.message);
     }
   };
 
@@ -49,9 +58,6 @@ function UserTable() {
     }
   };
 
-
-
-
   const fetchUsers = async () => {
     const users = await client.findAllUsers();
     setUsers(users);
@@ -60,9 +66,15 @@ function UserTable() {
     fetchUsers(); 
     fetctUser();
 }, []);
+
+
+const printDetails = ( user) =>{
+    alert("(EXTRA CREDIT) \n"+
+        JSON.stringify(user, null,2))
+}
   return (
     <div className="mt-3">
-    <h2>List of Users (Extra Credit)</h2>
+    <h2>List of Users </h2>
     {!currentUser && (
         <h3>Not Logged In!!</h3>
     )}
@@ -75,7 +87,6 @@ function UserTable() {
     {currentUser && currentUser.role==="ADMIN" && (
       <>
 
-      <h1>User List</h1>
       <table className="table">
         <thead>
           <tr>
@@ -113,10 +124,10 @@ function UserTable() {
             className=" text-success fs-1 " />
             </button>
 
-            <button type="button" className="btn btn-light">
+            {/* <button type="button" className="btn btn-light">
              <BsPlusCircleFill onClick={createUser}
              className="text-success fs-1 " />
-            </button>
+            </button> */}
 
             </td>
           </tr>
@@ -127,9 +138,17 @@ function UserTable() {
           {users.map((user) => (
             <tr key={user._id}>
               <td>
-                <Link to={`/project/account/${user._id}`}>
+
+                {user.username && (
+                <button type="button" className="btn btn-light"
+                style={{ color: 'blue' }}
+                onClick={() => printDetails(user)}>
+                   <u> {user.username}</u>
+                </button>
+                )}
+                {/* <Link to={`/project/account/${user._id}`}>
                     {user.username}
-                </Link>
+                </Link> */}
               </td>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
