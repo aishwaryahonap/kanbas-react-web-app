@@ -32,11 +32,22 @@ function UserTable() {
 //     }
 //   };
 
-const createUser= async () => {
+// const createUser= async () => {
+//     try {
+//       await client.signup(user);
+//     } catch (err) {
+//       setError(err.response.data.message);
+//     }
+//   };
+
+const createUser = async () => {
     try {
-      await client.signup(user);
+      let tempuser = { ...user };
+      delete tempuser._id;
+      const newUser = await client.createUser(tempuser);
+      setUsers([newUser, ...users]);
     } catch (err) {
-      setError(err.response.data.message);
+      console.log(err);
     }
   };
 
@@ -123,10 +134,10 @@ const printDetails = ( user) =>{
             className=" text-success fs-1 " />
             </button>
 
-            {/* <button type="button" className="btn btn-light">
+            <button type="button" className="btn btn-light">
              <BsPlusCircleFill onClick={createUser}
              className="text-success fs-1 " />
-            </button> */}
+            </button>
 
             </td>
           </tr>

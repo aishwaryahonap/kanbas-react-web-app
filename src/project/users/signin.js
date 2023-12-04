@@ -17,7 +17,8 @@ function Signin() {
       <br/>
 
       <label>Password: </label>
-      <input value={credentials.password} onChange={(e) => setCredentials({...credentials, password: e.target.value})}/>
+      <input type="password"
+       value={credentials.password} onChange={(e) => setCredentials({...credentials, password: e.target.value})}/>
       <br/><br/>
       <button type="button" className="btn btn-secondary"
       onClick={signin}> Signin </button>
